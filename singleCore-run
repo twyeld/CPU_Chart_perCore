@@ -1,0 +1,2 @@
+docker run -it --cpuset-cpus="0" -p 3000:3000 systemstats3
+

@@ -20,14 +20,6 @@ let io = socket(server)
 io.on('connection', function(socket) {
 	console.log('Browser connected');
 
-	// CPU0
-
-	//socket.on('CPU0', function(){
-
-	//	var data = {'CPU0speed':os.cpus().speed};
-	//		io.emit('CPU0', data);
-	//		console.log(data);
-	//	});
 
 	setInterval(function(){
 
@@ -42,7 +34,7 @@ io.on('connection', function(socket) {
 	}, 300);
 
 
-	//Whenever browser disconnects this piece of code executed
+//Whenever browser disconnects this gets executed
 	socket.on('disconnect', function () {
 	   console.log('Browser disconnected');
 	});

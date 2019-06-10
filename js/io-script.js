@@ -39,13 +39,13 @@ var randomScalingFactor = function() {
 	document.getElementById("log8").innerHTML = response[7]/1000 + 'GHz';
 	//document.getElementById("log9").innerHTML = response + 'GHz';
 		})
-			return cpuSpeedValue0/2500;
-			return cpuSpeedValue1/2500;
-			return cpuSpeedValue2/2500;
-			return cpuSpeedValue3/2500;
-			return cpuSpeedValue4/2500;
-			return cpuSpeedValue5/2500;
-			return cpuSpeedValue6/2500;
-			return cpuSpeedValue7/2500;
+			return cpuSpeedValue0/4000;
+			return cpuSpeedValue1/4000;
+			return cpuSpeedValue2/4000;
+			return cpuSpeedValue3/4000;
+			return cpuSpeedValue4/4000;
+			return cpuSpeedValue5/4000;
+			return cpuSpeedValue6/4000;
+			return cpuSpeedValue7/4000;
 
 	};
