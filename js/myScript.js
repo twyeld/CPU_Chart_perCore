@@ -9,7 +9,7 @@
 		  datasets: [
 		   {
 			data: [randomScalingFactor()],
-			backgroundColor: 'rgb(255, 0, 0)',
+			backgroundColor: ["red","green","blue","yellow","orange","magenta","cyan","black"],//'rgb(255, 0, 255)',
 			borderWidth: 0,
 		   }
 		  ]

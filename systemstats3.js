@@ -20,28 +20,25 @@ let io = socket(server)
 io.on('connection', function(socket) {
 	console.log('Browser connected');
 
+	// CPU0
+
+	//socket.on('CPU0', function(){
+
+	//	var data = {'CPU0speed':os.cpus().speed};
+	//		io.emit('CPU0', data);
+	//		console.log(data);
+	//	});
+
 	setInterval(function(){
 
 		var cpus = os.cpus();
 
-		var cpuSpeed0 = cpus[0].speed;
-		//console.log('1: ' + cpuSpeed0);
-		var cpuSpeed1 = cpus[1].speed;
-		var cpuSpeed2 = cpus[2].speed;
-		var cpuSpeed3 = cpus[3].speed;
-		var cpuSpeed4 = cpus[4].speed;
-		var cpuSpeed5 = cpus[5].speed;
-		var cpuSpeed6 = cpus[6].speed;
-		var cpuSpeed7 = cpus[7].speed;
 
-		socket.send(cpuSpeed0);
-		socket.send(cpuSpeed1);
-		socket.send(cpuSpeed2);
-		socket.send(cpuSpeed3);
-		socket.send(cpuSpeed4);
-		socket.send(cpuSpeed5);
-		socket.send(cpuSpeed6);
-		socket.send(cpuSpeed7);
+
+		const response = cpus.map(cpu => cpu.speed);
+		//console.log(response[0]);
+		socket.send(response);
+
 	}, 300);
 
 
