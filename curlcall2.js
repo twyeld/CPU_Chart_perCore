@@ -25,7 +25,7 @@ const options = {
   path: '/containers/b1f86a847676/stats'
 };
 
-//var output=[];
+var output=[];
 //var resp=[];
 
 const callback = resp => {
@@ -36,9 +36,13 @@ const callback = resp => {
     resp.on('data', (chunk) => {
           body += chunk;
         var resp = JSON.parse(chunk + '');
-        var output = console.log (JSON.stringify(resp.precpu_stats.cpu_usage.percpu_usage, null, 4));
+        //console.log (JSON.stringify(resp.precpu_stats.cpu_usage.percpu_usage, null, 4));
 	
-	//console.log(JSON.stringify(output));
+	//console.log(resp.precpu_stats.cpu_usage.percpu_usage);
+
+	var output = resp.precpu_stats.cpu_usage.percpu_usage;
+	console.log(output);
+	//socket.send(output);
 
     });
 
@@ -61,6 +65,7 @@ const callback = resp => {
 
 		//const response = coreload.map(cpu => cpu.output);
 		socket.send(coreload);
+		//console.log(output);
 		console.log(coreload);
 		//}
 
@@ -71,8 +76,6 @@ const callback = resp => {
 		});
 	 });
 });
-
-var socket = require('socket.io')
 
 const clientRequest = http.get(options, callback);
 clientRequest.end(0);
