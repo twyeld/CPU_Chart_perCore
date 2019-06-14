@@ -1,15 +1,21 @@
 
-cpuSpeedValue0 = 0;
-cpuSpeedValue0 = 1;
-cpuSpeedValue0 = 2;
-cpuSpeedValue0 = 3;
-cpuSpeedValue0 = 4;
-cpuSpeedValue0 = 5;
-cpuSpeedValue0 = 6;
-cpuSpeedValue0 = 7;
+	cpuSpeedValue0 = 0;
+	cpuSpeedValue0 = 1;
+	cpuSpeedValue0 = 2;
+	cpuSpeedValue0 = 3;
+	cpuSpeedValue0 = 4;
+	cpuSpeedValue0 = 5;
+	cpuSpeedValue0 = 6;
+	cpuSpeedValue0 = 7;
 
 var randomScalingFactor = function() {
 	socket.on('message', function(response){
+
+	//var response3 = response
+
+	//var response3 = parseFloat(response).toPrecision(4);// decimal places
+	//var response3 = response2.toString();
+	//console.log(response3);
 
 	cpuSpeedValue0 = response[0];
 	cpuSpeedValue0 = response[1];
@@ -20,32 +26,25 @@ var randomScalingFactor = function() {
 	cpuSpeedValue0 = response[6];
 	cpuSpeedValue0 = response[7];
 
-	//console.log('CPU usage value every second', data)
 
-	//cpuSpeedValue = response;
-
-	//response2 = cpuSpeedValue/1000
-
-	//var data3 = parseFloat(data2).toPrecision(4);// decimal places
-	//var response = data3.toString();
-	document.getElementById("log").innerHTML = response[0]/1000 + 'GHz';
+	//document.getElementById("log").innerHTML = response3[0] + '%';
+	document.getElementById("log").innerHTML = parseFloat(response[0]).toPrecision(4) + '%';
 	//cpuUsageValue;
-	document.getElementById("log2").innerHTML = response[1]/1000 + 'GHz';
-	document.getElementById("log3").innerHTML = response[2]/1000 + 'GHz';
-	document.getElementById("log4").innerHTML = response[3]/1000 + 'GHz';
-	document.getElementById("log5").innerHTML = response[4]/1000 + 'GHz';
-	document.getElementById("log6").innerHTML = response[5]/1000 + 'GHz';
-	document.getElementById("log7").innerHTML = response[6]/1000 + 'GHz';
-	document.getElementById("log8").innerHTML = response[7]/1000 + 'GHz';
-	//document.getElementById("log9").innerHTML = response + 'GHz';
+	document.getElementById("log2").innerHTML = parseFloat(response[1]).toPrecision(4) + '%';
+	document.getElementById("log3").innerHTML = parseFloat(response[2]).toPrecision(4) + '%';
+	document.getElementById("log4").innerHTML = parseFloat(response[3]).toPrecision(4) + '%';
+	document.getElementById("log5").innerHTML = parseFloat(response[4]).toPrecision(4) + '%';
+	document.getElementById("log6").innerHTML = parseFloat(response[5]).toPrecision(4) + '%';
+	document.getElementById("log7").innerHTML = parseFloat(response[6]).toPrecision(4) + '%';
+	document.getElementById("log8").innerHTML = parseFloat(response[7]).toPrecision(4) + '%';
 		})
-			return cpuSpeedValue0/2500;
-			return cpuSpeedValue1/2500;
-			return cpuSpeedValue2/2500;
-			return cpuSpeedValue3/2500;
-			return cpuSpeedValue4/2500;
-			return cpuSpeedValue5/2500;
-			return cpuSpeedValue6/2500;
-			return cpuSpeedValue7/2500;
+			return cpuSpeedValue0/100;
+			return cpuSpeedValue1/100;
+			return cpuSpeedValue2/100;
+			return cpuSpeedValue3/100;
+			return cpuSpeedValue4/100;
+			return cpuSpeedValue5/100;
+			return cpuSpeedValue6/100;
+			return cpuSpeedValue7/100;
 
 	};

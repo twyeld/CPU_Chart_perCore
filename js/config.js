@@ -19,7 +19,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 0 speed"
+		   text: "CPU core0 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -47,7 +47,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 1 speed"
+		   text: "CPU core1 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -75,7 +75,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 2 speed"
+		   text: "CPU core2 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -103,7 +103,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 3 speed"
+		   text: "CPU core3 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -132,7 +132,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 4 speed"
+		   text: "CPU core4 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -161,7 +161,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 5 speed"
+		   text: "CPU core5 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -190,7 +190,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 6 speed"
+		   text: "CPU core6 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
@@ -219,7 +219,7 @@
 		  legend: {},
 		  title: {
 		   display: true,
-		   text: "CPU core 7 speed"
+		   text: "CPU core7 % use"
 		  },
 		  //this is where we can comment in/out features from Chart.RadialGauge.umd.js
 		  centerPercentage: 80, //how big the inner circle space is
