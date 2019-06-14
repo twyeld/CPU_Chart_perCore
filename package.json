@@ -1,20 +1,17 @@
 {
-  "name": "system_stats",
+  "name": "systeminfo2",
   "version": "1.0.0",
-  "main": "systemstats.js",
+  "description": "",
+  "main": "sysinfo.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0",
+    "systeminformation": "^4.9.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "clientside-require": "^4.7.2",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "os": "^0.1.1",
-    "os-utils": "0.0.14",
-    "socket.io": "^2.2.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  "license": "ISC"
 }
