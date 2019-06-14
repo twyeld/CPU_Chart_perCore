@@ -1,2 +1,2 @@
-# CPU_Chart_perCore
-doughnut gauges showing CPU speed per core in Node.js, OS and Socket.io
+# CPU_Chart_perCore_curlcall_version
+using unix socket to access the container stats
